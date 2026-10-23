@@ -9,6 +9,7 @@ Labs are investigated **cold** — findings are reasoned from the evidence befor
 | Platform | Lab | Category | Summary |
 |---|---|---|---|
 | CyberDefenders | [RetailBreach](./cyberdefenders/retailbreach/) | Network Forensics (PCAP) | Web intrusion: directory brute-forcing → stored XSS → session hijacking → directory traversal |
+| CyberDefenders | [PoisonedCredentials](./cyberdefenders/poisonedcredentials/) | Network Forensics (PCAP) | LLMNR/NBT-NS poisoning → forced SMB authentication → NTLMv2 credential capture |
 
 ## Structure
 
