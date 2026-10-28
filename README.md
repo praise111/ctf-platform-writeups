@@ -11,6 +11,7 @@ Labs are investigated **cold** — findings are reasoned from the evidence befor
 | CyberDefenders | [RetailBreach](./cyberdefenders/retailbreach/) | Network Forensics (PCAP) | Web intrusion: directory brute-forcing → stored XSS → session hijacking → directory traversal |
 | CyberDefenders | [PoisonedCredentials](./cyberdefenders/poisonedcredentials/) | Network Forensics (PCAP) | LLMNR/NBT-NS poisoning → forced SMB authentication → NTLMv2 credential capture |
 | CyberDefenders | [The Crime Lab](./cyberdefenders/the-crime-lab/) | Mobile Forensics (Android / ALEAPP) | Murder investigation: reconstructing a victim's timeline from phone artifacts |
+| CyberDefenders | [REvil / GOLD SOUTHFIELD](./cyberdefenders/revil-gold-southfield/) | Threat Hunting (Splunk + Sysmon) | REvil ransomware hunt: ruling out a Windows Update false positive, tracing the dropper, shadow-copy deletion, and the C2 onion domain |
 
 ## Structure
 
@@ -18,6 +19,6 @@ Labs are investigated **cold** — findings are reasoned from the evidence befor
 <platform>/<lab>/
 ├── README.md              full writeup with evidence and findings
 ├── images/                annotated tool screenshots
-├── filter-queries/        display filters used (network labs)
+├── filter-queries/        display filters / SPL searches used
 └── artifact-sources/      artifact/module sources (forensics labs)
 ```
