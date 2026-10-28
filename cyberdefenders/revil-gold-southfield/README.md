@@ -65,7 +65,7 @@ index=revil "event.code"=1 winlog.event_data.Image="*facebook assistant.exe*"
 
 ![Q5](./images/q5-hashes.png)
 
-**Answer:** SHA-256 `B8D7FB4488C0556385498271AB9F…` *(full value — TODO: paste from Splunk Hashes field)*
+**Answer:** SHA-256 `B8D7FB4488C0556385498271AB9FFFDF0EB38BB2A330265D9852E3A6288092AA` 
 MD5 `4D84641B65D8BB6C3EF03BF59434242D` · SHA1 `E5D8D5EECF7957996485CBC1CDBEAD9221672A1A`
 
 ### Q6 — Attacker's onion domain
@@ -87,7 +87,7 @@ Hash → threat intel → full ransom-note template with the TOR payment URL.
 | PID | `5348` |
 | MD5 | `4D84641B65D8BB6C3EF03BF59434242D` |
 | SHA1 | `E5D8D5EECF7957996485CBC1CDBEAD9221672A1A` |
-| SHA256 | `B8D7FB4488C0556385498271AB9F…` *(confirm full)* |
+| SHA256 | `B8D7FB4488C0556385498271AB9FFFDF0EB38BB2A330265D9852E3A6288092AA` |
 | Shadow-copy deletion | `Get-WmiObject Win32_Shadowcopy \| ForEach-Object {$_.Delete();}` |
 | Ransom note | `5uizv5660t-readme.txt` |
 | Per-infection ID / extension | `5uizv5660t` |
