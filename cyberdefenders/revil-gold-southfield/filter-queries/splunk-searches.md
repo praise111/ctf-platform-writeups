@@ -5,7 +5,9 @@ SPL used during the hunt, in order.
 ## Orientation — the file-creation burst (and false positive)
 ```
 index=revil "event.code"=11
-| stats count by winlog.event_data.Image
+| bucket _time span=1m
+| stats count, values(winlog.event_date.TargetFilename) as CreatedFiles by _time, winlog.event_data, Image
+| where count > 50
 ```
 Surfaces the 600+ files from `svchost.exe` in a tight window. **Before trusting it**, verify the process identity:
 ```
