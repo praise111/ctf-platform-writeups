@@ -110,4 +110,3 @@ python3 vol.py -f memory.dmp windows.getsids --pid 6980
 - Multiple instances of a signed binary (`RegSvcs.exe`) spawned by malware is a strong injection indicator; `windows.malfind` confirms it by finding an MZ/PE in private memory — only PID 6796 was the real payload host.
 - Defender `ExclusionPath` entries double as a map of what the attacker cares about — they pointed straight at the malware and its persistence payload.
 - Plugin choice must match process state: `windows.cmdline` worked on the live PowerShell but not the terminated `schtasks.exe`.
-- ATT&CK precision: security-tool path exclusions map specifically to **T1564.012**, not just the broader Impair Defenses technique.
